@@ -1,10 +1,9 @@
-from rest_framework import viewsets
+from rest_framework import mixins, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework import mixins
 
 from .models import Cat, Owner
-from .serializers import CatSerializer, OwnerSerializer, CatListSerializer
+from .serializers import CatListSerializer, CatSerializer, OwnerSerializer
 
 
 class CatViewSet(viewsets.ModelViewSet):
